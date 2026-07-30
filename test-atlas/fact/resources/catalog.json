@@ -1,0 +1,14 @@
+{
+  "title": "Fact Fixture Atlas",
+  "count": 6,
+  "fields": ["Europe", "Oceania"],
+  "types": ["UN Member State", "Territory"],
+  "entries": [
+    { "id": 1, "field": "Europe", "discipline": "Western Europe", "type": "UN Member State", "name": "France", "aliases": ["Hexagone"], "statement": "A western European republic reaching from the Atlantic to the Alps." },
+    { "id": 2, "field": "Europe", "discipline": "Western Europe", "type": "UN Member State", "name": "Germany", "aliases": ["Deutschland"], "statement": "A federal republic at the heart of Europe." },
+    { "id": 3, "field": "Europe", "discipline": "Southern Europe", "type": "UN Member State", "name": "Spain", "statement": "An Iberian kingdom of many autonomous regions." },
+    { "id": 4, "field": "Oceania", "discipline": "Australia & New Zealand", "type": "UN Member State", "name": "New Zealand", "aliases": ["Aotearoa"], "statement": "Two main islands of dramatic landscapes in the south Pacific." },
+    { "id": 5, "field": "Oceania", "discipline": "Polynesia", "type": "UN Member State", "name": "Tonga", "statement": "The only remaining Polynesian kingdom." },
+    { "id": 6, "field": "Oceania", "discipline": "Polynesia", "type": "Territory", "name": "French Polynesia", "statement": "An overseas collectivity of France scattered across five archipelagos." }
+  ]
+}

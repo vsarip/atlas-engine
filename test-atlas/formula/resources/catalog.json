@@ -1,0 +1,14 @@
+{
+  "title": "Formula Fixture Atlas",
+  "count": 6,
+  "fields": ["Physics", "Mathematics"],
+  "types": ["Law", "Theorem", "Formula / Equation"],
+  "entries": [
+    { "id": 1, "field": "Physics", "discipline": "Mechanics", "type": "Law", "name": "Newton's Second Law", "statement": "F = ma (force equals mass times acceleration)" },
+    { "id": 2, "field": "Physics", "discipline": "Mechanics", "type": "Formula / Equation", "name": "Kinetic Energy", "statement": "KE = ½mv²" },
+    { "id": 3, "field": "Physics", "discipline": "Waves", "type": "Formula / Equation", "name": "Wave Speed", "statement": "v = fλ" },
+    { "id": 4, "field": "Mathematics", "discipline": "Geometry", "type": "Theorem", "name": "Pythagorean Theorem", "statement": "a² + b² = c²" },
+    { "id": 5, "field": "Mathematics", "discipline": "Geometry", "type": "Formula / Equation", "name": "Circle Area", "statement": "A = πr²" },
+    { "id": 6, "field": "Mathematics", "discipline": "Analysis", "type": "Theorem", "name": "Fundamental Theorem of Calculus", "statement": "The definite integral of a function equals the difference of an antiderivative at the endpoints" }
+  ]
+}

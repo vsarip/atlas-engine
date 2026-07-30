@@ -1,0 +1,21 @@
+# Vendored/generated inside fixtures (recreated by tools/sync_engine.py + builds)
+test-atlas/*/app/src/engine/
+test-atlas/*/tools/engine/
+test-atlas/*/app/public/data/
+test-atlas/*/site/
+test-atlas/*/ENGINE_MANIFEST.json
+test-atlas/*/ENGINE_VERSION
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local env
+.env
+secrets.env
+*.local

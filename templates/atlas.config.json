@@ -1,0 +1,20 @@
+{
+  "name": "My Atlas",
+  "project": "my_atlas",
+  "catalog": "resources/catalog.json",
+  "latex_conversion": true,
+  "types": ["Concept"],
+  "taxonomy_quotas": {
+    "Example Field": { "Example Discipline": 5 }
+  },
+  "statement_rules": { "forbid_chars": "$€£₹¥¢‰", "max_len": 200 },
+  "widget_types": [],
+  "content_required": [
+    "intuition", "why", "example", "applications", "history",
+    "derivation", "related", "links"
+  ],
+  "extra_validators": [],
+  "content_validators": [],
+  "data_assets": [],
+  "batch_size": 16
+}

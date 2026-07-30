@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "overview": "France stretches from Atlantic beaches to Alpine peaks. Its capital is a byword for art and food, and the country's regions each keep a *fierce* local identity. A café espresso can cost $2 or more on a famous square — the dollar sign here is plain text, not math.",
+  "facts": {
+    "Capital": { "v": "Paris" },
+    "Population": { "v": "68.2 million", "year": 2023, "src": "WB" },
+    "Area": { "v": "643,801 km²", "year": 2022, "src": "WB" },
+    "Currency": { "v": "Euro (EUR)" }
+  },
+  "related": [2, 3],
+  "links": [
+    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/France" }
+  ]
+}

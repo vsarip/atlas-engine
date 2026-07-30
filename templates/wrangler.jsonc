@@ -1,0 +1,15 @@
+// Cloudflare Workers Static Assets (assets-only worker, no code).
+// Deployed by Workers Builds on push to main: build `bash tools/build.sh`,
+// deploy `npx wrangler deploy`. See atlas-engine/docs/NEW_ATLAS.md.
+{
+  "name": "my-atlas",
+  "compatibility_date": "2026-07-04",
+  "assets": {
+    "directory": "./site"
+  },
+  "workers_dev": false,
+  "preview_urls": true,
+  "routes": [
+    { "pattern": "myatlas.example.com", "custom_domain": true }
+  ]
+}

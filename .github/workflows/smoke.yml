@@ -1,0 +1,33 @@
+name: smoke
+on: [push, pull_request]
+
+jobs:
+  fixtures:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        fixture: [formula, fact]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Vendor engine into fixture
+        run: python3 tools/sync_engine.py --to test-atlas/${{ matrix.fixture }}
+      - name: Build fixture
+        run: bash test-atlas/${{ matrix.fixture }}/tools/build.sh
+      - name: KaTeX bundling assertion
+        # "KaTeX_" is the inlined font-family prefix — present iff KaTeX is
+        # really bundled. (engine.css keeps a couple of inert .katex selectors
+        # in every build, so the bare string is not a usable signal.)
+        run: |
+          if [ "${{ matrix.fixture }}" = "fact" ]; then
+            if grep -q "KaTeX_" test-atlas/fact/site/index.html; then
+              echo "FAIL: KaTeX leaked into the no-math fixture bundle" >&2; exit 1
+            fi
+            echo "OK: no KaTeX in fact fixture bundle"
+          else
+            grep -q "KaTeX_" test-atlas/formula/site/index.html
+            echo "OK: KaTeX present in formula fixture bundle"
+          fi

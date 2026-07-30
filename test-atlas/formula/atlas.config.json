@@ -1,0 +1,18 @@
+{
+  "name": "Formula Fixture Atlas",
+  "project": "atlas_fixture_formula",
+  "catalog": "resources/catalog.json",
+  "latex_conversion": true,
+  "types": ["Law", "Theorem", "Formula / Equation"],
+  "taxonomy_quotas": {
+    "Physics": { "Mechanics": 2, "Waves": 1 },
+    "Mathematics": { "Geometry": 2, "Analysis": 1 }
+  },
+  "statement_rules": { "forbid_chars": "$€£₹¥¢‰", "max_len": 200 },
+  "widget_types": [],
+  "content_required": [
+    "intuition", "why", "example", "applications", "history",
+    "derivation", "related", "links"
+  ],
+  "batch_size": 16
+}

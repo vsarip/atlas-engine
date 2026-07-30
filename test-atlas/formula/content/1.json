@@ -1,0 +1,42 @@
+{
+  "id": 1,
+  "latex": "F = m\\,a",
+  "intuition": "Push something and it speeds up. The **same push** moves a light thing easily and a heavy thing barely — the acceleration $a$ you get is the force $F$ divided by the mass $m$. Buying that push costs effort, not \\$5 bills.",
+  "why": "This single line turns forces into *predictions of motion* — the engine of classical mechanics.",
+  "widget": {
+    "type": "formula-explorer",
+    "title": "Feel the trade-off between force, mass and acceleration",
+    "params": {
+      "latex": "F = m\\,a",
+      "vars": [
+        { "sym": "m", "label": "mass", "min": 0.1, "max": 10, "step": 0.1, "value": 2, "unit": "kg" },
+        { "sym": "a", "label": "acceleration", "min": 0, "max": 20, "step": 0.1, "value": 3, "unit": "m/s²" }
+      ],
+      "expr": "m*a",
+      "result": { "sym": "F", "label": "Force needed", "unit": "N", "precision": 1 }
+    }
+  },
+  "example": {
+    "setup": "A trolley has mass $m = 12\\ \\text{kg}$ and you want $a = 1.5\\ \\text{m/s}^2$.",
+    "steps": [
+      "Write the law: $F = m\\,a$.",
+      "Substitute: $F = 12 \\times 1.5$.",
+      "Multiply: $F = 18\\ \\text{N}$."
+    ],
+    "result": "An 18-newton push does it."
+  },
+  "applications": [
+    "Car crumple zones lengthen a crash, lowering $a$ and the force on passengers.",
+    "Rocket engineers balance thrust against ever-decreasing fuel mass.",
+    "A golfer maximizes club-head force on a low-mass ball."
+  ],
+  "history": "Isaac Newton published the three laws of motion in the *Principia* in 1687.",
+  "derivation": [
+    "Newton's general statement is $F = \\dfrac{dp}{dt}$ with momentum $p = mv$.",
+    "For constant mass, $F = m\\dfrac{dv}{dt} = m\\,a$."
+  ],
+  "related": [2, 4],
+  "links": [
+    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion" }
+  ]
+}
